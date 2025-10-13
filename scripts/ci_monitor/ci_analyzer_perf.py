@@ -1290,7 +1290,7 @@ class SGLangPerfAnalyzer:
                     summary_lines.append("")
 
             # Write summary to GitHub Actions
-            with open(github_step_summary, "w", encoding="utf-8") as f:
+            with open(github_step_summary, "a", encoding="utf-8") as f:
                 f.write("\n".join(summary_lines))
 
             print("✅ GitHub Actions summary generated successfully")
